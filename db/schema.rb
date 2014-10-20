@@ -21,8 +21,11 @@ ActiveRecord::Schema.define(version: 20141017151108) do
 
   create_table "paragraphes", force: true do |t|
     t.text     "corps"
+    t.integer  "chapitre_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "paragraphes", ["chapitre_id"], name: "index_paragraphes_on_chapitre_id"
 
 end

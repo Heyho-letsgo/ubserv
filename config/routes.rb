@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  root "chapitres#index"
+  # root "chapitres#index"
+	root 'statics#home'
+	
+	get '/tutorails' => 'tutorails#index'
+	get '/tutorails' => 'tutorails#index'
+	get '/tutorails/page0102' =>'tutorails#page0102'
 
   resources :chapitres do
         resources :paragraphes
