@@ -8,6 +8,13 @@ gem 'sqlite3'
 # Utilisation de Unicorn
 gem "unicorn-rails"
 
+# CONSOLES (pour debug)
+gem 'hirb' # une console
+
+# DEBUG (et consoles)
+gem 'better_errors' # remplace la page d'erreur avec un REPL (une console)
+#gem 'debugger' # un outil de debug
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
