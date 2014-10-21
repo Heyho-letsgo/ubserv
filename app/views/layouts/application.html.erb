@@ -4,13 +4,20 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> </title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="author" href="humans.txt">
-    <!-- Latest compiled and minified CSS & JS -->
+        <title><%= @title %> </title>
+
+
+      <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="author" href="humans.txt">
+
+
+
     </head>
     <body>
 
@@ -27,13 +34,13 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/ ">Title</a>
+    <a class="navbar-brand" href="/ ">Brand</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/posts">SinatraTodo</a></li>
+      <li class="active"><a href="/chapitres">SinatraTodo</a></li>
       <li><a href="#">Link</a></li>
     </ul>
     <form class="navbar-form navbar-left" role="search">
@@ -46,7 +53,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial Rails (première partie) <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="/tutorails/page0102">0102 - Créer l'application</a></li>
+              <li><a href="/tutorails/page0102"><span class="glyphicon glyphicon-heart-empty text-primary" style="font-size: small"  > </span> 0102 - Créer l'application</a></li>
               <li><a href="/tuto/page0103">0103 - Views et Controllers</a></li>
               <li><a href="/tuto/page0104">0104</a></li>
               <li><a href="#">Separated link</a></li>
@@ -57,8 +64,6 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
-
-
 
 <%= yield %>
 

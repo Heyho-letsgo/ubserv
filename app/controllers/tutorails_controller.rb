@@ -6,6 +6,7 @@ class TutorailsController < ApplicationController
 	
 	#page0102
 	def page0102
+    @title ="Tutorails 0102"
 	end
 		
   end
